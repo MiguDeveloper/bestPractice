@@ -19,9 +19,9 @@ const name = 'Miguel';
 
 ## Reglas lenguaje Javascript
 
-- Declaración de variables: las tres formas que conocemos son las siguientes, ```const```, ```let```, ```var```. comencemos declarando nuestras variables con ```const``` si esta necesita ser reasignada mas adelante usemos ```let```, recordemos que ya no existe buenas razones para usar ```var```.
+- Declaración de variables: las tres formas que conocemos son las siguientes, ```const```, ```let```, ```var```. comencemos declarando nuestras variables con ```const``` si está necesita ser reasignada mas adelante usemos ```let```, recordemos que ya no existe buenas razones para usar ```var```.
 
-- Punto y coma: siempre usemosla. Los punto y coma deben incluirse al final de las expresiones de función, pero no al final de las declaraciones  de función.
+- Punto y coma: siempre usemosla. El punto y coma debe incluirse al final de las expresiones de función, pero no al final de las declaraciones  de función.
 ```javascript
 // No recomendado
 const foo = () => {
@@ -42,7 +42,7 @@ function foo() {
 }
 ```
 
-## Ciclos: for, for-in y foreach
+## Ciclos: ```for```, ```for-in``` y ```foreach```
 
 - Se prefiere ```forEach``` y ```for``` sobre ```for-in``` cuando vamos iterar sobre un array
 
