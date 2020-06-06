@@ -27,17 +27,16 @@ const name = 'Miguel';
 const foo = () => {
     return true // sin ;
 }
-
+// No recomendado
 function foo() {
     return true;
 }; // ; extra
 
-// recomendado
-
+// Recomendado
 const foo = () => {
     return true;
 };
-
+// Recomendado
 function foo() {
     return true;
 }
@@ -48,8 +47,8 @@ function foo() {
 - Se prefiere ```forEach``` y ```for``` sobre ```for-in``` cuando vamos iterar sobre un array
 
 ```javascript
-// No recomendado
 myArray = ['a', 1, 'etc'];
+// No recomendado
 for(const indexNum in myArray){
     console.log(myArray[indexNum])
 }
@@ -65,7 +64,9 @@ const clubAlianza = {
             'nro': 10
         }
     ]
-}
+};
+
+// No recomendado
 for(const i in clubAlianza){
     console.log(clubAlianza.jugadores[i].name);
     console.log(clubAlianza.jugadores[i].nro);
@@ -74,10 +75,12 @@ for(const i in clubAlianza){
 // Recomendado
 myArray.forEach(item => console.log(item));
 
+// Recomendado
 clubAlianza.jugadores.forEach(item => {
     console.log(item.name + ' ' + item.nro)
 })
 
+// Recomendado
 const jugador = {'name': 'Paolo', 'apellido': 'Guerrero'};
 for(const key in jugador){
     if(jugador.hasOwnProperty(key)){
@@ -107,7 +110,7 @@ const myObject = {a: 1, b: 2, c: 3};
 - Retorna siempre ```true```: '0', [], {}
 - Usar siempre que se pueda el condicional ternario
 ```javascript
-// No es necesario
+// No recomendado
 if(val){
     return foo();
 } else {
