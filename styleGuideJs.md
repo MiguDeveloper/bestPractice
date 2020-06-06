@@ -12,7 +12,7 @@ const name = 'Miguel';
 
 - Identación: El uso de las sangrias debe ser coherente en todo el archivo. Ya sea que uses tabs o espacios
 
-- TODO: resalte tareas por hacer con ```TODO``` y no otros agregue el comentario luego de los dos puntos
+- TODO: resalte tareas por hacer con ```TODO``` y no use otros marcadores. Agregue el comentario luego de los dos puntos
 ```javascript
 // TODO: revisar tipo de variable
 ```
