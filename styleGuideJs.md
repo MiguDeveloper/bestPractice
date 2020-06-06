@@ -86,7 +86,7 @@ for(const key in jugador){
 }
 ```
 
-## Array y Objetos literalesç
+## Array y Objetos literales
 
 - Utilice array y objetos literales y no constructores.
 
