@@ -87,6 +87,9 @@ for(const key in jugador){
         console.log(jugador[key]);
     }
 }
+
+// cuando queremo recorrer las propiedades de un objeto podemos usar el Object
+Object.values(formulario.controls).forEach(control => control.markAsTouched());
 ```
 
 ## Array y Objetos literales
