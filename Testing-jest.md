@@ -1,11 +1,13 @@
-```
+```json
 "scripts": {
     "start": "cross-env NODE_ENV=production node index.js",
     "start:dev": "cross-env NODE_ENV=development nodemon index.js",
     "test": "cross-env NODE_ENV=test jest --verbose --detectOpenHandles --testTimeout=30000",
     "test:watch": "npm run test -- --watch"
 }
+```
 
+```shell
 // si queremos indicarle un test en especifico podemos usar
 "test": "cross-env NODE_ENV=test jest --verbose --detectOpenHandles --testTimeout=30000" tests/notes.test.js,
 
