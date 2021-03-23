@@ -6,14 +6,14 @@
     "test:watch": "npm run test -- --watch"
 }
 ```
+```si queremos indicarle un test en especifico podemos usar```
+
+```json
+"test": "cross-env NODE_ENV=test jest --verbose --detectOpenHandles --testTimeout=30000" tests/notes.test.js,
+```
 
 ```shell
-// si queremos indicarle un test en especifico podemos usar
-"test": "cross-env NODE_ENV=test jest --verbose --detectOpenHandles --testTimeout=30000" tests/notes.test.js,
-
 // o usar en la consola el comando de ademas de usar el script le indicamos el test especifico
 // el titulo no hace falta que sea exacto
 npm run test -- -t "titulo del it de la prueba"
-
-
 ```
