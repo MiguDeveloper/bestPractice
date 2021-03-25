@@ -1,3 +1,9 @@
+```iniciar un proyecto con jest y expecificar el enviroment, etc```
+
+```shell
+npx jest --init
+```
+
 ```json
 "scripts": {
     "start": "cross-env NODE_ENV=production node index.js",
