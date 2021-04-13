@@ -163,3 +163,26 @@ if (node && node.kids) {
   console.log(node.kids);
 }
 ```
+
+## Objetos por switch
+
+```javascript
+function getDrink(type){
+  const drinks = {
+    'coke': ()=>{
+      return 'Coke';
+    },
+    'pepsi': ()=>{
+      return 'Pepsi';
+    },
+    'lemonade':()=>{
+      return 'Lemonade'
+    },
+    'default':()=>{
+      return 'Default item
+    }
+  };
+
+  return (drinks[type] || drinks['default'])();
+}
+```
