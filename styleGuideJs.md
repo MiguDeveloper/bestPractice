@@ -186,3 +186,29 @@ function getDrink(type){
   return (drinks[type] || drinks['default'])();
 }
 ```
+
+```javascript
+function test(color) {
+  switch (color) {
+    case 'rojo':
+      return ['manzana', 'fresa'];
+    case 'amarillo':
+      return ['banana', 'piña'];
+    case 'morada':
+      return ['uva', 'ciruela'];
+    default:
+      return [];
+  }
+}
+
+// refactor
+const colorFrutas = {
+  rojo: ['manzana', 'fresa'],
+  amarillo: ['banana', 'piña'],
+  morada: ['uva', 'ciruela'],
+};
+
+function testRefacto(color) {
+  return colorFrutas[color] || [];
+}
+```
